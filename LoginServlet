@@ -47,12 +47,12 @@ public class LoginServlet extends HttpServlet {
             ResultSet rs = ps.executeQuery();
 
             if (rs.next()) {
-                // ✅ Login success
+                //  Login success
             	request.getSession().setAttribute("username", n);
                 RequestDispatcher rd = request.getRequestDispatcher("welcome.jsp");
                 rd.forward(request, response);
             } else {
-                // ❌ Login failed
+                //  Login failed
                 out.println("<h2 style='color:red'>Login Failed!!</h2>");
                 out.println("<a href='Login.jsp'>Try AGAIN!!</a>");
             }
