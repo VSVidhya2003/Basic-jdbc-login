@@ -15,6 +15,7 @@
     %>
         <p><b>Username:</b> <%= username %></p>
         <p>You are successfully logged in 🎉</p>
+         <a href="TodoServlet">Next</a>
     <%
         } else {
     %>
